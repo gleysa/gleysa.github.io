@@ -54,7 +54,7 @@ h1 {
     transform:translateZ(10vw) rotateY(70deg)  ;
   }
   100% {
-    transform: translateZ(10vw) rotateY(10deg);
+    transform: translateZ(10vw) rotateY(30deg);
   }
 }
 
