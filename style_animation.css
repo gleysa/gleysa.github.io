@@ -54,7 +54,7 @@ h1 {
     transform:translateZ(10vw) rotateY(70deg)  ;
   }
   100% {
-    transform: translateZ(10vw) rotateY(40deg);
+    transform: translateZ(10vw) rotateY(10deg);
   }
 }
 
@@ -78,43 +78,6 @@ b {
   box-shadow: inset 0 0 0.1em rgba(0,255,0,0.1);
 }
 
-.ovalo1 {
-  transform: rotateY(0deg);
-  background: rgba(202,108,176,0.3);
-  box-shadow: 0 0 2px rgba(202,108,176,0.3);
-
-}
-.ovalo2 {
-  transform: rotateY(30deg);
-  background: rgba(163,85,141,0.3);
-  box-shadow: 0 0 2px rgba(163,85,141,0.3);
-  
-}
-.ovalo3 {
-  transform: rotateY(-30deg);
-  background: rgba(202,108,176,0.3);
-  box-shadow: 0 0 2px  rgba(202,108,176,0.3);
-
-}
-.ovalo4 {
-  transform: rotateY(60deg);
-  background: rgba(200,130,179,0.3);
-  box-shadow: 0 0 2px rgba(200,130,179,0.3);
-
-}
-.ovalo5 {
-  transform: rotateY(-60deg);
-  background: rgba(163,85,141,0.3);
-  box-shadow: 0 0 2px rgba(163,85,141,0.3);
-
-}
-.ovalo6 {
-  transform: rotateY(90deg);
-  background: rgba(159,98,139,0.3);
-  box-shadow: 0 0 2px rgba(159,98,139,0.3);
-
-
-}
 @keyframes rotate {
   from {
     transform: rotateX(70deg) rotateZ(10deg) rotateY(0deg);
@@ -122,33 +85,4 @@ b {
   to {
     transform: rotateX(-70deg) rotateZ(-10deg) rotateY(360deg);
     }
-}
-.container {
-  width: 9em;
-  height: 9em;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: rotateX(70deg) rotateZ(10deg) rotateY(0deg);
-  animation: rotate 5s infinite linear;
-    margin-left: 15em;
-    margin-top: 3em;
-}
-.container:before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  top: 7.9em;
-  left: calc(4em - 7px);
-  background: transparent;
-  transform: rotateX(90deg);
-
-}
-.container div {
-  position: absolute;
-  width: 5em;
-  height: 5em;
-  opacity: .7;
-  border-radius: 50%;
 }
