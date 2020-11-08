@@ -20,7 +20,15 @@ a:hover {
   color: #978b94 !important;
   font-size: 0.9em !important;
 }
-
+#certificate{
+  max-width: 80px !important;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #cf6fb5;
+  display: block;
+  float: left;
+  margin-right: 1em;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
