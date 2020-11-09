@@ -28,6 +28,8 @@ a:hover {
   display: block;
   float: left;
   margin-right: 1em;
+    -webkit-box-shadow: 4px 1px 38px -10px rgba(0,0,0,0.82); 
+box-shadow: 4px 1px 38px -10px rgba(0,0,0,0.82);
 }
 #img_skill{
   max-width: 200px !important;
