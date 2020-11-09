@@ -29,6 +29,33 @@ a:hover {
   float: left;
   margin-right: 1em;
 }
+#img_skill{
+  max-width: 200px !important;
+  height: auto;
+  border-radius: 5px;
+  align-items: center;
+  display: block;
+  margin: auto;
+
+
+}
+#img_skill:hover, #img_skill:focus{
+  max-width: 210px !important;
+  height: auto;
+  -webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+#div_skill{
+    -webkit-box-shadow: 4px 1px 28px -10px rgba(0,0,0,0.82); 
+  box-shadow: 4px 1px 28px -10px rgba(0,0,0,0.82);
+  border-radius: 5px;
+  padding: 1em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
@@ -494,12 +521,14 @@ box-shadow: 4px 1px 28px -1px rgba(0,0,0,0.9);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #45505b;
+  border-radius: 5px;
 
 }
 
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
+  border-radius: 5px;
 }
 
 .skills .progress-bar-wrap {
@@ -511,8 +540,9 @@ box-shadow: 4px 1px 28px -1px rgba(0,0,0,0.9);
   height: 10px;
   transition: .9s;
   background-color: #cf6fb5;
--webkit-box-shadow: 4px 1px 28px -1px rgba(0,0,0,0.9); 
-box-shadow: 4px 1px 28px -1px rgba(0,0,0,0.9);
+-webkit-box-shadow: 4px 1px 8px -1px rgba(0,0,0,0.9); 
+box-shadow: 4px 1px 8px -1px rgba(0,0,0,0.9);
+border-radius: 5px;
 
 }
 
