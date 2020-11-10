@@ -38,12 +38,35 @@ box-shadow: 4px 1px 38px -10px rgba(0,0,0,0.82);
   align-items: center;
   display: block;
   margin: auto;
+}
 
+.skill_info {
+text-align: center;
+
+cursor: pointer;
+perspective: 500px; 
+}
+.skill_info .inf {
+width: 70%;
+height: auto;
+font-size: 1em;
+padding: 5% 8%;
+position: absolute;
+content: "";
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotateY(90deg);
+transform-origin: 50%;
+background: rgba(255,211,243,0.9);
+opacity: 0;
+transition: all 0.4s ease-in;
 
 }
-#img_skill:hover, #img_skill:focus{
-  max-width: 210px !important;
-  height: auto;
+.skill_info:hover .inf {
+transform: translate(-50%, -50%) rotateY(0deg);
+opacity: 1;
+}
+.skill_info:hover img{
   -webkit-animation:spin 20s linear infinite;
     -moz-animation:spin 20s linear infinite;
     animation:spin 20s linear infinite;
@@ -56,7 +79,91 @@ box-shadow: 4px 1px 38px -10px rgba(0,0,0,0.82);
   box-shadow: 4px 1px 28px -10px rgba(0,0,0,0.82);
   border-radius: 5px;
   padding: 1em;
+} 
+/* grow effect */
+#img_item{
+  max-width: 90px !important;
+  height: auto;
+  margin: auto;
+  box-shadow: none !important;
+
 }
+.item_gle
+{ 
+  margin-top: 2em;
+  max-width: 90px !important;
+  height: auto;
+  display: inline;
+  background: rgba(0,0,0,0);
+  transform: rotate(-30deg) skew(25deg) scale(.8);
+  transition: 0.5s;
+}
+
+.item_gle img
+{
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+}
+.item_gle:hover img:nth-child(4)
+{
+  transform: translate(140px,-140px);   
+  opacity: 1;
+}
+.item_gle:hover img:nth-child(3)
+{
+  transform: translate(100px,-100px);   
+  opacity: .8;
+}
+.item_gle:hover img:nth-child(2)
+{
+  transform: translate(60px,-60px);   
+  opacity: .6;
+}
+.item_gle:hover img:nth-child(1)
+{
+  transform: translate(20px,-20px);   
+  opacity: .4;
+}
+
+/* */
+
+/* computer 3d */
+.computer {
+height: auto;
+perspective: 1000px;
+}
+
+}
+.computer img {
+ display: block;
+width: 100%;
+height: 100%;
+  border-radius: 5px;
+  align-items: center;
+  display: block;
+  margin: auto;
+
+transform-style: preserve-3d;
+transform: rotateX(70deg);
+transition: all 0.8s;
+}
+.computer:hover img {
+transform: rotateX(20deg); 
+}
+.computer img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));    
+   transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+/* computer 3d end*/
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
@@ -176,6 +283,10 @@ object {
     .contact .info {
     display: block !important;
   }
+  .item_gle
+{ display: none;
+}
+
 }
 
 /*--------------------------------------------------------------
