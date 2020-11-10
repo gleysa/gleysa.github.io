@@ -51,10 +51,11 @@ h1 {
 }
 @keyframes spinIt {
   0% {
-    transform:translateZ(10vw) rotateY(70deg)  ;
+    transform:translateZ(10vw) rotateY(70deg) ;
   }
   100% {
     transform: translateZ(10vw) rotateY(30deg);
+    right: calc(50% - 2.5em);
   }
 }
 
