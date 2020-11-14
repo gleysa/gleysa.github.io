@@ -87,7 +87,11 @@ b {
     transform: rotateX(-70deg) rotateZ(-10deg) rotateY(360deg);
     }
 }
+
 @media (max-width: 992px) {
-  h1 {
-     margin-left: 1em;
+  .cont h1 {
+     margin-left: 0.5em;
   }
+  .cont {
+    right: calc(50% - 0.5em);}
+}
