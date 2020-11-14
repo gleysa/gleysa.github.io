@@ -9,12 +9,12 @@ html, body {
 }
 h1 {
   margin: 0;
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 700;
   line-height: 62px;
   color: #45505b;
   position: absolute;
-  margin-left: 2em;
+  margin-left: 2.35em;
   margin-top: 0.5em;
   font-family: 'Roboto', sans-serif;
 
