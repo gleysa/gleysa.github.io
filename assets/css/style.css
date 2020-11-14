@@ -539,7 +539,7 @@ box-shadow: 4px 1px 38px -10px rgba(0,0,0,0.82);
 @media (min-device-width: 480px) and (max-device-width: 680px)  {
   #hero {
     text-align: center;
-    height: 190vh;
+    height: 205vh;
   }
 }
 /*--------------------------------------------------------------
