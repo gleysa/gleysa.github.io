@@ -14,12 +14,12 @@ h1 {
   line-height: 62px;
   color: #45505b;
   position: absolute;
-  margin-left: 2.35em !important;
+  margin-left: 2.35em;
   margin-top: 0.5em;
   font-family: 'Roboto', sans-serif;
 
 }
-@media screen and (max-width: 622px) {
+@media (min-device-width: 320px) and (max-device-width: 480px) {
   .main h1 {
      margin-left: 0.5em;
   }  
@@ -55,7 +55,8 @@ h1 {
   animation: spinIt linear 22s infinite;
 
 }
-@media only screen and (max-width: 622px) {
+
+@media (min-device-width: 320px) and (max-device-width: 480px) {
   .gicon {
    right: calc(50% - 1em);
   }  
