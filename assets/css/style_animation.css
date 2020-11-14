@@ -20,7 +20,7 @@ h1 {
 
 }
 @media (min-device-width: 320px) and (max-device-width: 480px) {
-  .main h1 {
+  h1 {
      margin-left: -1em;
   }  
 }
@@ -58,7 +58,7 @@ h1 {
 
 @media (min-device-width: 320px) and (max-device-width: 480px) {
   .gicon {
-   right: calc(50% - 0.5em);
+   right: calc(50% - 0.01em);
   }  
 }
 
