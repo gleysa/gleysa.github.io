@@ -14,11 +14,17 @@ h1 {
   line-height: 62px;
   color: #45505b;
   position: absolute;
-  margin-left: 2.35em;
+  margin-left: 2.35em !important;
   margin-top: 0.5em;
   font-family: 'Roboto', sans-serif;
 
 }
+@media screen and (max-width: 622px) {
+  .main h1 {
+     margin-left: 0.5em;
+  }  
+}
+
 .gleysa1{transform: rotateX(60deg) rotateY(360deg) translateZ(8.5vw);}
 .gleysa2{transform: rotateX(120deg) rotateY(360deg) translateZ(8.5vw);}
 .gleysa3{transform: rotateX(180deg) rotateY(360deg) translateZ(8.5vw);}
@@ -39,7 +45,7 @@ h1 {
 .gicon {
   font-size: 10vw;
   position: absolute;
-    right: calc(50% - 2em);
+    right: calc(50% - 2em) !important;
     top: calc(50% - 0.5em);
   width: 3em;
   height: 3em;
@@ -49,6 +55,12 @@ h1 {
   animation: spinIt linear 22s infinite;
 
 }
+@media only screen and (max-width: 622px) {
+  .gicon {
+   right: calc(50% - 1em);
+  }  
+}
+
 @keyframes spinIt {
   0% {
     transform:translateZ(10vw) rotateY(70deg) ;
@@ -88,10 +100,3 @@ b {
     }
 }
 
-@media (max-width: 992px) {
-  .cont h1 {
-     margin-left: 0.5em;
-  }
-  .cont {
-    right: calc(50% - 0.1em);}
-}
