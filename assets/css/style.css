@@ -456,14 +456,23 @@ box-shadow: 4px 1px 38px -10px rgba(0,0,0,0.82);
   background-size: cover;
   position: relative;
 }
-/*
-#background {
+
+#portfolio {
   width: 100%;
   height: auto;
   background: url("../img/background.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
-}*/
+}
+#portfolio:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 @media (min-width: 992px) {
   #hero {
@@ -1171,7 +1180,6 @@ box-shadow: 4px 1px 38px -10px rgba(0,0,0,0.82);
   width: 94.02985075%;
   max-width: 1260px;
   padding: 0 2.25em 4em;
-  background: #fff;
   height: auto;
 }
 
