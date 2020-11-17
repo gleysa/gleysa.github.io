@@ -33,12 +33,26 @@ a:hover {
     margin-left: 30px; 
     margin-top: 5px; 
 } 
-  
+ 
 @keyframes floating { 
     0% { transform: translate(0,  0px); } 
     50%  { transform: translate(0, 15px); } 
     100%   { transform: translate(0, -0px); }     
 } 
+
+table p{
+  font-size: 0.8em !important;
+  font-style: italic;
+}
+
+table{
+  font-size: 0.9em;
+  text-align: center;
+}
+.badge{
+  font-size: 1.5em;
+  text-align: center;
+}
 
 .cursor{
   cursor: pointer;
@@ -46,10 +60,9 @@ a:hover {
   font-size: 0.9em !important;
 }
 #certificate{
-  max-width: 70px !important;
+  max-width: 50px !important;
   height: auto;
   border-radius: 5px;
-
   display: block;
   float: left;
   margin-right: 1em;
