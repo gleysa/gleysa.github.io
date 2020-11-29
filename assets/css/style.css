@@ -539,6 +539,7 @@ box-shadow: 4px 1px 38px -10px rgba(0,0,0,0.82);
   color: #cf6fb5;
 }
 .muestra{
+  width: 100%;
   max-width: 400px;
   height: auto;
   margin: 0 auto;
@@ -546,6 +547,7 @@ box-shadow: 4px 1px 38px -10px rgba(0,0,0,0.82);
   display: block;
 }
 .muestra2{
+  width: 100%;
   max-width: 500px;
   height: auto;
   margin: 0 auto;
@@ -553,6 +555,7 @@ box-shadow: 4px 1px 38px -10px rgba(0,0,0,0.82);
   display: block;
 }
 .muestra3{
+  width: 100%;
   max-width: 200px;
   height: auto;
   margin: 0 auto;
