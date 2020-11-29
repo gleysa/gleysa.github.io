@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Gleysa Muñoz</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  
+  <!-- preload -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="styles">
+  <link rel="preload" href="assets/css/style.css" as="styles">
+  <link rel="preload"  href="assets/vendor/aos/aos.css" as="styles">
+  <link rel="preload"  href="assets/vendor/jquery/jquery.min.js" as="script">
+  <link rel="preload"  href="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" as="script">
+
+  <!-- prefetch -->
+  <link rel="prefetch" href="assets/vendor/venobox/venobox.min.js" as="script">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/gallery.css" rel="stylesheet">
+
+ <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+<link rel="manifest" href="fav/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="shortcut icon" href="fav/favicon.ico" type="image/x-icon">
+<link rel="icon" href="fav/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+ <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          
+          <h2>
+          <img class="muestra" src="assets/img/logo2.png"></h2>
+          <p>Invoicing Software for: kromatronics c.a.</p>
+          <p>By Gleysa Muñoz</p>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <h2>Invoicing Software</h2>
+            <p>The invoicing software developed consists in a tool that helps kromatronics c.a. to generate a bill for products or services they have provided to clients. Each invoice that is created in the web application consists of a list with the services or products with their corresponding prices, and the total amount of money the client have to pay to generete the envoice. </p><p> The software developed is used mostly to perform accounting and financial tasks as well as the creation of envoices. The envoicing software is based on PHP, MySQL, JavaScript & frameworks, HTML5 and CSS3.</p><br><br><br>
+          </div>
+          <div class="col-lg-4">
+            <img class="domo3" src="assets/img/portfolio/potential/pot1.png">
+            <img class="domo4" src="assets/img/portfolio/kroma/kroma1.png">
+          </div>
+        </div>  
+      
+  
+<hr>
+  
+ 
+<div class="row">
+          <div class="col-lg-4">
+            <br> 
+            <h2>Video Sample</h2>
+            <p>A quick sample of the home automation control system working.</p>
+
+            <div class="item_gle1">
+              <img class="muestra" src="assets/img/portfolio/kroma/kroma3.png">
+            </div><br><br><br><br><br><br>
+          </div> 
+           <div class="col-lg-8">
+            <br><br>
+            <div class="contenedor">
+            <div class="reproductor" data-id="6Kwg0Seu2Ek"></div>
+            </div>
+          </div>
+  </div>
+<hr>
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Gleysa Profile</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by Gleysa Muñoz</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+<script>
+(function() {
+    var v = document.getElementsByClassName("reproductor");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+function labnolThumb(id) {
+    return '<img class="imagen-previa" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="youtube-play"></div>';
+}
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "//www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "youtube-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
+</script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/typedjs/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script type='text/javascript'>
+  $(function(){
+    $(document).bind("contextmenu",function(e){
+        return false;
+    });
+  });
+  </script>
+
+</body>
+
+</html>
