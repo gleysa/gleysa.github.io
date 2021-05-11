@@ -1,0 +1,50 @@
+.window {
+  max-width: 450px;
+  height: auto;
+  overflow: hidden; 
+
+}
+.window_wrapper {
+  display: flex;
+  align-items: stretch;
+}
+.window_panel {
+  background:transparent;
+  width: 50%; 
+  float: left; 
+  position: relative; 
+  z-index: -1; 
+  display: flex; 
+  align-items: center;
+  color: #fff;
+}
+
+@keyframes move_left {
+  0% { right: 0; }
+  40% { transform: translateX(-91%); }
+  41%{ transform: translateX(-91%); }
+  100% { left: 0; }
+}
+
+@keyframes move_right {
+  0% { left: 0; }
+  40% { transform: translateX(91%); }
+  41%{ transform: translateX(91%); }
+  100% { right: 0; }
+}
+
+
+.window_panel--left {
+  display:flex;
+  justify-content: flex-end;
+  x-transition: all 5s linear;
+  animation: move_left 2.5s infinite;
+}
+
+.window_panel--right {
+  display:flex;
+  justify-content: flex-start;
+  x-transition: all 5s linear;
+  animation: move_right 2.5s infinite;
+} 
+
