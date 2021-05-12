@@ -66,27 +66,3 @@
   padding: 0px;
   background: url('../img/window.jpg') 118px 0px;
 }
-
-@keyframes move_left {
-  0% { right: 0; }
-  40% { transform: translateX(-81%); }
-  41%{ transform: translateX(-81%); }
-  100% { left: 112px; }
-}
-
-@keyframes move_right {
-  0% { left: 220px; }
-  40% { transform: translateX(81%); }
-  41%{ transform: translateX(81%); }
-  100% { right: 0; }
-}
-
-.left {
-  border: none !important;
-  outline: 0px solid transparent !important;
-  animation: move_left 2.5s infinite;
-}
-
-.right {
-  animation: move_right 2.5s infinite;
-} 
