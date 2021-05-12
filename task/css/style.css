@@ -1,50 +1,92 @@
-.window {
-  max-width: 450px;
-  height: auto;
-  overflow: hidden; 
-
-}
 .window_wrapper {
   display: flex;
   align-items: stretch;
+
 }
-.window_panel {
-  background:transparent;
-  width: 50%; 
-  float: left; 
-  position: relative; 
-  z-index: -1; 
-  display: flex; 
-  align-items: center;
-  color: #fff;
+#background {
+  width: 420px;
+  height: 210px;
+ position: relative;
+  background: url('../img/window.jpg') 0px 0px;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+.back {
+  width: 440px;
+  height: 200px;
+ background-color: white;
+ z-index: -1;
+ position: absolute;
+ width: 220px;
+ height: 198px;
+ left: 110px;
+ top: 14px;
+}
+
+#fixed_left {
+  position: absolute;
+  z-index: 5;
+  width: 118px;
+  height: 210px;
+  margin: 0px;
+  padding: 0px;
+  background: url('../img/window.jpg') 0px 0px;
+}
+
+#panel_left {
+  position: absolute;
+  left: 120px;
+  width: 113px;
+  height: 210px;
+  margin: 0px;
+  padding: 0px;
+  background: url('../img/window.jpg') 333px 0px;
+}
+
+#panel_right {
+  position: absolute;
+  left: 225px;
+  background-color: #000;
+  width: 113px;
+  height: 210px;
+  margin: 0px;
+  padding: 0px;
+  background: url('../img/window.jpg') 222px 0px;
+}
+
+#fixed_right {
+  position: absolute;
+  left: 326px;
+  z-index: 5;
+  width: 118px;
+  height: 210px;
+  margin: 0px;
+  padding: 0px;
+  background: url('../img/window.jpg') 118px 0px;
 }
 
 @keyframes move_left {
   0% { right: 0; }
-  40% { transform: translateX(-91%); }
-  41%{ transform: translateX(-91%); }
-  100% { left: 0; }
+  40% { transform: translateX(-81%); }
+  41%{ transform: translateX(-81%); }
+  100% { left: 112px; }
 }
 
 @keyframes move_right {
-  0% { left: 0; }
-  40% { transform: translateX(91%); }
-  41%{ transform: translateX(91%); }
+  0% { left: 220px; }
+  40% { transform: translateX(81%); }
+  41%{ transform: translateX(81%); }
   100% { right: 0; }
 }
 
-
-.window_panel--left {
-  display:flex;
-  justify-content: flex-end;
-  x-transition: all 5s linear;
+.left {
+  border: none !important;
+  outline: 0px solid transparent !important;
   animation: move_left 2.5s infinite;
 }
 
-.window_panel--right {
-  display:flex;
-  justify-content: flex-start;
-  x-transition: all 5s linear;
+.right {
   animation: move_right 2.5s infinite;
 } 
-
