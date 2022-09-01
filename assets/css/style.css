@@ -221,7 +221,7 @@ opacity: 1;
 {
   position: absolute;
   width: 100%;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .item_gle:hover img:nth-child(4)
 {
